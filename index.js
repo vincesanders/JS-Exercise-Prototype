@@ -118,10 +118,10 @@ Baby.prototype.play = function() {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window/Global Object Binding: This points to the window object when we're in global scope. So if you type "console.log(this);" in the console in global scope (not inside any other blocks of code), it will log the entire window object. 
+  2. Implicit Binding: When a function is called with a "." the object before the "." is "this". For example: If we have "someObject.someFunction(param);", the someObject will be "this" inside the function.
+  3. New Binding: Whenever you use a constructor, the "this" will be referring to the object that is being created by the constructor.
+  4. Explicit Binding: When we use call or apply, especially when creating "child" objects, we explicitly pass in the "this" context. That way, the "this" will still be referring to the object created by the constructor that passed in the "this" context.
 */
 
 
